@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>More Mob Heads</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="" id="favicon">
   </head>
   <body class="dark-mode">
     <div>
@@ -25,5 +27,14 @@
       <div class="image-row" id="imageRow"></div>
     </div>
     <script src="script.js"></script>
+    <script>
+      fetch('https://raw.githubusercontent.com/Tec-Tonic/checklist/main/src/img/list.txt')
+        .then(response => response.text())
+        .then(data => {
+          var favicons = data.split('\n').map(name => 'img/heads/' + name + '.png');
+          var favicon = document.getElementById('favicon');
+          favicon.href = favicons[Math.floor(Math.random() * favicons.length)];
+        });
+    </script>
   </body>
 </html>
