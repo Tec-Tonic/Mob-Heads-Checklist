@@ -13,6 +13,7 @@ Angry Bee
 Angry Pollinated Bee
 Blaze
 Bogged
+Shorn Bogged
 Camel
 Tabby Cat
 Tuxedo Cat
@@ -89,7 +90,7 @@ Toast Rabbit
 Brown Rabbit
 White Rabbit
 Black Rabbit
-Black and White Rabbit
+White Splotched Rabbit
 Gold Rabbit
 Salt and Pepper Rabbit
 Ravager
@@ -140,8 +141,24 @@ Invulnerable Wither
 Armoured Wither
 Armoured Invulnerable Wither
 Wither Skeleton
-Wolf
-Angry Wolf
+Angry Ashen Wolf
+Ashen Wolf
+Angry Black Wolf
+Black Wolf
+Angry Chestnut Wolf
+Chestnut Wolf
+Angry Pale Wolf
+Pale Wolf
+Angry Rusty Wolf
+Rusty Wolf
+Angry Snowy Wolf
+Snowy Wolf
+Angry Spotted Wolf
+Spotted Wolf
+Angry Striped Wolf
+Striped Wolf
+Angry Woods Wolf
+Woods Wolf
 Zoglin
 Zombie
 Zombie Armourer
