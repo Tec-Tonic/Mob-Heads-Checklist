@@ -1,5 +1,3 @@
-Bogged
-Shorn Bogged
 Angry Ashen Wolf
 Ashen Wolf
 Angry Black Wolf
@@ -18,3 +16,5 @@ Angry Striped Wolf
 Striped Wolf
 Angry Woods Wolf
 Woods Wolf
+Bogged
+Shorn Bogged
