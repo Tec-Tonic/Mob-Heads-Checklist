@@ -101,8 +101,8 @@ Skeleton
 Skeleton Horse
 Slime
 Sniffer
-Snow Golem in a Pumpkin
 Snow Golem
+Shorn Snow Golem
 Spider
 Squid
 Stray
