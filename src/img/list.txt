@@ -1,4 +1,3 @@
-# Taxidermist Checklist (198):
 Allay
 Armadillo
 Curled Up Armadillo
@@ -198,6 +197,5 @@ Zombie Villager
 Zombie Weaponsmith
 Zombified Piglin
 
-# Other Heads (2):
 Ender Dragon
 Zombie Horse
