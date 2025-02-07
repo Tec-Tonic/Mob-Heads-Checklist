@@ -28,9 +28,13 @@ Tabby Cat
 Tuxedo Cat
 White Cat
 Cave Spider
-Chicken
+Cold Chicken
+Temperate Chicken
+Warm Chicken
 Cod
-Cow
+Cold Cow
+Temperate Cow
+Warm Cow
 Charged Creeper
 Creeper
 Dolphin
@@ -82,7 +86,9 @@ Green Parrot
 Light Blue Parrot
 Red Parrot
 Phantom
-Pig
+Cold Pig
+Temperate Pig
+Warm Pig
 Piglin
 Piglin Brute
 Pillager
