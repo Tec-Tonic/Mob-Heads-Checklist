@@ -1,1 +1,103 @@
-<meta http-equiv="refresh" content="0; url=https://tec-tonic.github.io/Mob-Heads-Checklist/src/index.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mob Head Image Search</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #search-container {
+            margin-bottom: 20px;
+        }
+        #image-container {
+            margin-top: 20px;
+        }
+        .image-result {
+            margin: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .toggle-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <div class="toggle-switch">
+        <button id="toggle-mode" class="btn btn-secondary">Switch to Light Mode</button>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div id="search-container" class="col-md-8 text-center">
+                <div class="input-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="Enter mob name to search">
+                    <div class="input-group-append">
+                        <button id="search-button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="image-container" class="row justify-content-center"></div>
+    </div>
+    <script>
+        const searchButton = document.getElementById('search-button');
+        const searchInput = document.getElementById('search-input');
+        const imageContainer = document.getElementById('image-container');
+        const toggleModeButton = document.getElementById('toggle-mode');
+        const body = document.body;
+
+        function searchImages(jsonData, searchTerm) {
+            const matches = jsonData.filter(entry => entry.name.toLowerCase().includes(searchTerm));
+            return matches;
+        }
+
+        searchButton.addEventListener('click', function() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            if (searchTerm) {
+                fetch('./src/img/list.json')
+                    .then(response => response.json())
+                    .then(jsonData => {
+                        const foundNames = searchImages(jsonData, searchTerm);
+                        if (foundNames.length > 0) {
+                            imageContainer.innerHTML = foundNames.map(nameObj => {
+                                const imgSrc = `./src/img/heads/${nameObj.name}.png`;
+                                return `<div class="col-md-3 image-result"><img src="${imgSrc}" alt="${nameObj.name}"><p>${nameObj.name}</p></div>`;
+                            }).join('');
+                        } else {
+                            imageContainer.innerHTML = '<p>No images found.</p>';
+                        }
+                    });
+            }
+        });
+
+        toggleModeButton.addEventListener('click', function() {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                toggleModeButton.textContent = 'Switch to Dark Mode';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                toggleModeButton.textContent = 'Switch to Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>
