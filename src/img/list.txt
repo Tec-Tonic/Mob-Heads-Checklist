@@ -16,6 +16,7 @@ Bogged
 Shorn Bogged
 Breeze
 Camel
+Camel Husk
 Black Cat
 British Shorthair Cat
 Calico Cat
@@ -36,6 +37,11 @@ Cold Cow
 Temperate Cow
 Warm Cow
 Charged Creeper
+Copper Golem
+Exposed Copper Golem
+Weathered Copper Golem
+Oxidized Copper Golem
+Creaking
 Creeper
 Dolphin
 Donkey
@@ -52,6 +58,8 @@ Warm Frog
 Ghast
 Glow Squid
 Goat
+Charging Ghast
+Happy Ghast
 Screaming Goat
 Guardian
 Hoglin
@@ -63,6 +71,7 @@ Dark Brown Horse
 Grey Horse
 White Horse
 Husk
+Illusioner
 Iron Golem
 Brown Llama
 Creamy Llama
@@ -72,6 +81,7 @@ Magma Cube
 Brown Mooshroom
 Red Mooshroom
 Mule
+Nautilus
 Ocelot
 Aggressive Panda
 Brown Panda
@@ -80,6 +90,7 @@ Panda
 Playful Panda
 Weak Panda
 Worried Panda
+Parched
 Blue Parrot
 Grey Parrot
 Green Parrot
@@ -133,6 +144,7 @@ Squid
 Stray
 Cold Strider
 Strider
+Sulfur Cube
 Tadpole
 Brown Trader Llama
 Creamy Trader Llama
@@ -201,7 +213,9 @@ Zombie Shepherd
 Zombie Toolsmith
 Zombie Villager
 Zombie Weaponsmith
+Zombie Horse
+Temperate Zombie Nautilus
+Warm Zombie Nautilus
 Zombified Piglin
 
 Ender Dragon
-Zombie Horse
